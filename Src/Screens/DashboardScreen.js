@@ -20,8 +20,7 @@ import {
 import { useNavigation } from "@react-navigation/native";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import ApplicationStyles from "../Themes/ApplicationStyles";
-import { Dropdown } from "react-native-element-dropdown";
-import Chart from "../Components/Chart";
+// import { Dropdown } from "react-native-element-dropdown";
 import NewChart from "../Components/NewChart";
 const data = [
   { label: "Last Week", value: "1" },
@@ -59,7 +58,7 @@ export default function DashboardScreen() {
               <Text style={styles.descriptionHeader}>Sales</Text>
             </View>
             <View style={styles.dropdownView}>
-              <Dropdown
+              {/* <Dropdown
                 style={styles.tradetypeviewStyle}
                 data={data}
                 selectedTextStyle={[styles.TitleTextStyle]}
@@ -77,10 +76,9 @@ export default function DashboardScreen() {
                   </View>
                 )}
                 iconColor={Colors.grayFont}
-              />
+              /> */}
             </View>
           </View>
-          {/* <Chart /> */}
           <NewChart />
         </View>
         <View style={styles.chartHeader}>

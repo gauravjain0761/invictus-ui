@@ -14,8 +14,7 @@ import { CalenderIcon, ReportDownloadIcon } from "../SvgIcons/IconSvg";
 import { useNavigation } from "@react-navigation/native";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import ApplicationStyles from "../Themes/ApplicationStyles";
-import { Dropdown } from "react-native-element-dropdown";
-import Chart from "../Components/Chart";
+// import { Dropdown } from "react-native-element-dropdown";
 import DateTimePickerModal from "react-native-modal-datetime-picker";
 import moment from "moment";
 
@@ -73,7 +72,7 @@ export default function PLScreen() {
               </Text>
             </View>
             <View style={styles.dropdownView}>
-              <Dropdown
+              {/* <Dropdown
                 style={styles.tradetypeviewStyle}
                 data={data}
                 selectedTextStyle={[styles.TitleTextStyle]}
@@ -91,7 +90,7 @@ export default function PLScreen() {
                   </View>
                 )}
                 iconColor={Colors.grayFont}
-              />
+              /> */}
             </View>
           </View>
           <View style={styles.datePickerMainView}>
